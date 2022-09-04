@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>introduccion al DOS</title>
+</head>
+<body background="imagenes/fondo.jpg"
+      text="#FFFFFF">
+   <CENTER><h1>Intruccion al DOS</h1></center>
+    <p>en esta seccion veremos el avance en DOS</p>
+    <h3>Introduccion al lenguaje monousuarios DOS</h3>
+    <p>DOS Es un "lenguaje" de programacion de desarrollado en la segunda generacion de computadoras 
+        <br>junto al lenguaje COBOL</p>
+        <p>Ahora veremos la lista de etiquetas aprendidas hasta el mommento en la carrera de informatica:</p>
+        <ul>
+            <li><a href="#DIR">DIR</a></li>
+            <li><a href="#cls">CLS</a></li>
+            <li><a href="#copy">COPY</a></li>
+            <li><a href="#copy con">COPY CON</a></li>
+            <li><a href="#rename">RENAME</a></li>
+            <li><a href="#type">TYPE</a></li>
+            <li><a href="#Mkdir">MKDIR</a></li>
+            <li><a href="#rdmir">RDMIR</a></li>
+            <li><a href="#help">HELP</a></li>
+            <li><a href="#vol">VOL</a></li>
+            <li><a href="#cd">CD</a></li>
+            <li><a href="#tree">TREE</a></li>
+            <li><a href="#attrib">ATTRIB</a></li>
+            <li><a href="#del">DEL</a></li>
+        </ul>
+    <h3 id="DIR" text="#000000">DIR</h3>
+    <p>El comando "dir" sirve para ver todas los subdirectorios y archivos que tiene la unidad en la que se ejecuto el codigo<br>
+    y esta tiene sus variaciones como puede ser:
+    <ol>
+        <li>/a: esta muestra los archivos y los atributos que tiene </li>
+        <li>/s: muestra los archivos del direcctorio especificadoy todos sus directorios</li>
+    </ol>
+    este comando tiene mas atributos que se pueden usar como complementarios pero no son tan relevantes (por el momento)</p>
+    <h3 id="cls">CLS</h3>
+    <p>CLS es una etiqueta para limpiar la pantalla de trabajo, la traduccion en ingles seria <em>clean screen</em></p>
+    <h3 id="copy">COPY</h3>
+     <p>Esta etiqueta ayuda a copiar un  archivo o copiar en lotes en otra ubicacion y tiene atributos que se pueden adicionar a la etiqueta <br>
+     como por ejemplo:
+     <ol>
+        <li>/b: indica que un archivo es binario</li>
+        <li>/d: permite que el archivo de destino se cree sin cifrar</li>
+        <li>/z: copia archivos de red en modo reiniciable</li>
+     </ol>
+     Esta etiqueta se la puede escribir abreviada "cp" tambien se pueden anexar archivos, especificando un unico archivo de destino pero varios archivos de origen<br>
+     con caracteres comodines o en el siguente formato:<br>
+     <strong>archivo1+archivo2+archivo3 "direccion o ruta de destino"</strong>
+    </p>
+    <h3 id="copy con">COPY CON</h3>
+    <p>Esta etiqueta sirve para crear archivos en el formato desedeado como por ejemplo se pueden crear archivos .bat, .txt, .typ y otros <br>
+    para crear archivos se debe seguir el siguiente fomato:<br>
+    <em>copy con "el nombre que llevara el archivo".txt</em><br>
+    al precionar <strong>enter</strong> ya se podra redactar lo que se quiera en el archivo con el nombre deseado por el usuario<br>
+    una ves finalizado el texto, para terminar la escritura se debe precionar <strong>ctrl+c</strong>y asi ya se habra terminado de redactara el texto.        
+    </p>
+    <h3 id="rename">RENAME</h3>
+    <p>es una etiqueta que sirve para renombrar una carpeta o un archivo, y se debe seguir la siguiente formula para <br>
+    el correcto funcionamiento:
+    <strong>rename "unida:\ubicacion...\ archivo1 archivo2</strong>
+    </p>
+    <h3 id="type">TYPE</h3>
+    <p>type es una etiqueta que ayuda a ver el contenido de un archivo, con este comando no se puede editar el archivo 
+    </p>
+    <h3 id="Mkdir">MKDIR</h3>
+    <p>esta etiqueta ayuda a crear directorios y subdirectorios en cmd y tambien se la puede escribir como "MD" <BR>
+    tambien su puede crear uno o varios directorios estando en una carpeta en la que no se quiere el archivo usando comillasy seescribede la siguiente manera:<br>
+    MD(o MKDIR)  "Unidad:\directorio raiz..." "nombre1" "nombre2"     
+    </p>
+    <h3 id="rdmir">RDMIR</h3>
+    <p>Este codigo ayuda a eliminar directorios y sub directorios con o sin archivos dentro de este, pero para eliminar <br>
+    subdirectorios con archivos se debe usar "/s" usando ese atributo se puede eliminar un subdirectorio con archivos dentro.
+     RD(o RDMIR) /s "directorio a eliminar"   
+    </p>
+    <h3 id="help">HELP</h3>
+    <p>Esta etiqueta te ayuda a ver las formas en las que se puede usar una etiqueta, desplegando informacion, detalles, atributos que se pueden usar con <br>
+    la etiqueta que estas buscando. Ahora para ser mas especifico, se puede escribir HELP y la funcion con la que necesites ayuda, de esta forma de dara informacion mas detallada <br>
+    sobre el codigo que hayas escrito
+    </p>
+    <h3 id="vol">VOL</h3>
+    <p>esta etuiqueta muestra la etiqueta del volumen del disco y el número de serie, si existen. y se usa de la siguiente manera:<br>
+     VOL (unidad:)   
+    </p>
+    <h3 id="cd">CD</h3>
+    <p>Esta etiqueta te ayuda a moverte en el directorio que te encuentres subiendo o bajando subdirectorios y se usa de la siguiente manera:<br>
+     <ul>
+        <li>CD.. : Te ayuda a bajar de subdirectorio.</li>
+        <li>CD (unidad:subdirectorio): y de esa forma vas a cualquir directorio que desees.</li>
+     </ul>   
+    </p>
+    <h3 id="tree">TREE</h3>
+    <p>Esta etiqueta te muestra de manera grafica la estructura de carpetas de unidad o ruta y esta tiene dos atributos<br>
+    los cuales te ayudan de distinta forma:
+    <ul>
+        <li>/f: Este atributo te ayuda a ver los archivos que hay dentro de la unidad que desees.</li>
+        <li>/a: Usa ASCII en lugar de caracteres extendidos. </li>
+    </ul>
+    </p>
+    <h3 id="attrib">ATTRIB</h3>
+    <p>esta etiqueta muestra o cambia los atributos de un archivo, este tambien tiene varios atributos que ayudan a especificar tu codigo, aqui los mas relevantes:<br>
+        <ul>
+            <li>+: Establece un atributo.</li>
+            <li>-: Borra un atributo.</li>
+            <li>R: Atributo de archivo de solo lectura.</li>
+            <li>H: Atributo de archivo oculto.</li>
+            <li>A: Atributo de archivo de almacenamiento.</li>
+        </ul>
+    </p>
+    <h3 id="del">DEL</h3>
+    <p>esta etiqueta elimina uno o mas archivos.
+        <ul>
+            <li>names: Especifica una lista de uno o más archivos o directorios.
+            Se pueden usar caracteres comodín para eliminar varios archivos. </li>
+            <li>/p: pide confirmacion antes de eliminar un archivo.</li>
+            <li>/f: fuerza la eliminacion de un archivo.</li>
+            <li>/a: seleciona los archivps que se van a eliminar basandose en los atributos</li>
+        </ul>
+    </p>
+    <P>haga clik <a href="index.html">aqui</a> para volver a la pagina principal.</P>
+
+</body>
+</html>
